@@ -1,14 +1,25 @@
 {
   "name": "cyp-ngx-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation testing with Cypress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaJson/ngx-cypress-test.git"
+  },
+  "keywords": [
+    "cypress",
+    "automation testing"
+  ],
+  "author": "Sasha Shulha (sashamiller666@gmail.com)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SashaJson/ngx-cypress-test/issues"
+  },
+  "homepage": "https://github.com/SashaJson/ngx-cypress-test#readme",
   "devDependencies": {
     "cypress": "^6.5.0"
   }
