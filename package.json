@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SashaJson/ngx-cypress-test.git"
+    "url": "git+https://github.com/SashaJson/ngx-cypress-automation-test.git"
   },
   "keywords": [
     "cypress",
@@ -17,9 +17,9 @@
   "author": "Sasha Shulha (sashamiller666@gmail.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SashaJson/ngx-cypress-test/issues"
+    "url": "https://github.com/SashaJson/ngx-cypress-automation-test/issues"
   },
-  "homepage": "https://github.com/SashaJson/ngx-cypress-test#readme",
+  "homepage": "https://github.com/SashaJson/ngx-cypress-automation-test#readme",
   "devDependencies": {
     "cypress": "^6.5.0"
   }
