@@ -13,19 +13,19 @@ describe('Testing radio button', () => {
             cy.wrap(radioButtons)
                 .first()
                 .check({force: true})
-                .should('be.checked')
+                .should('be.checked');
 
             cy.wrap(radioButtons)
                 .eq(1)
-                .check({force: true})
+                .check({force: true});
 
             cy.wrap(radioButtons)
                 .eq(0)
-                .should('not.be.checked')
+                .should('not.be.checked');
 
             cy.wrap(radioButtons)
                 .eq(2)
-                .should('be.disabled')
+                .should('be.disabled');
 
         });
 
