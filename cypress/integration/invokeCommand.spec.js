@@ -10,7 +10,10 @@ describe('Testing invoke command', () => {
 
     it('First testing invoke command', () => {
 
-        cy.get('[for="exampleInputEmail1"]').should('contain', 'Email address');
+        cy.get('[for="exampleInputEmail1"]')
+            .should('contain', 'Email address')
+            .should('have.class', 'label')
+            .and('have.text', 'Email address');
 
     });
 
@@ -18,6 +21,8 @@ describe('Testing invoke command', () => {
 
         cy.get('[for="exampleInputEmail1"]').then(label => {
             expect(label.text()).to.equal('Email address');
+            expect(label).to.have.class('label');
+            expect(label).to.have.text('Email address');
         });
 
     });
