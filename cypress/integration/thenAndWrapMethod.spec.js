@@ -1,11 +1,12 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing then and wrap method', () => {
 
     beforeEach(() => {
         cy.visit('/');
-        cy.contains('Forms').click();
-        cy.contains('Form Layouts').click();
+        NavigationTo.formLayoutsPage();
     });
 
     it('First testing', () => {

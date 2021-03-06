@@ -1,11 +1,12 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing invoke command', () => {
 
     beforeEach(() => {
         cy.visit('/');
-        cy.contains('Forms').click();
-        cy.contains('Form Layouts').click();
+        NavigationTo.formLayoutsPage();
     });
 
     it('First testing invoke command', () => {

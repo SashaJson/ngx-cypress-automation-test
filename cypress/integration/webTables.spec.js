@@ -1,11 +1,12 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing web tables', () => {
 
     before(() => {
         cy.visit('/');
-        cy.contains('Tables & Data').click();
-        cy.contains('Smart Table').click();
+        NavigationTo.smartTablePage();
     });
 
     it('First example testing web tables', () => {

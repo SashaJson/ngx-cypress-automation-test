@@ -1,12 +1,13 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing tooltip', () => {
 
     it('First example testing tooltip', () => {
 
         cy.visit('/');
-        cy.contains('Modal & Overlays').click();
-        cy.contains('Tooltip').click();
+        NavigationTo.tooltipPage();
 
         cy.contains('nb-card', 'Colored Tooltips')
             .contains('Default').click();

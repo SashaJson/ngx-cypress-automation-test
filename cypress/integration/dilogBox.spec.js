@@ -1,12 +1,13 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing dilog box', () => {
 
     beforeEach(() => {
 
         cy.visit('/');
-        cy.contains('Tables & Data').click();
-        cy.contains('Smart Table').click();
+        NavigationTo.smartTablePage();
 
     });
 
@@ -24,7 +25,7 @@ describe('Testing dilog box', () => {
         const stub = cy.stub();
         cy.on('window:confirm', stub);
         cy.get('tbody tr').first().find('.nb-trash').click().then(() => {
-           expect(stub.getCall(0)).to.be.calledWith('Are you sure want to delete?');
+            expect(stub.getCall(0)).to.be.calledWith('Are you sure want to delete?');
         });
 
     });

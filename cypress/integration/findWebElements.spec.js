@@ -1,12 +1,13 @@
 /// <reference types="cypress" />
 
+import {NavigationTo} from '../support/page-objects/navigationPage';
+
 describe('Testing find web elements', () => {
 
     it('First example testing find web elements', () => {
 
         cy.visit('/');
-        cy.contains('Forms').click();
-        cy.contains('Form Layouts').click();
+        NavigationTo.formLayoutsPage();
 
         // cy.get('[data-cy="signInButton"]');
 
