@@ -27,7 +27,7 @@ describe('Testing assert property', () => {
 
         }
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.datepickerPage();
 
         cy.contains('nb-card', 'Common Datepicker').find('input').then(input => {

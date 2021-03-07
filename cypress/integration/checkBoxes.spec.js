@@ -6,7 +6,7 @@ describe('Testing check boxes', () => {
 
     it('First example testing check boxes', () => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.toasterPage();
 
         // cy.get('[type="checkbox"]').check({force: true});

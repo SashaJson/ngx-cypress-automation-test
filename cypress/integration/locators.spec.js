@@ -6,7 +6,7 @@ describe('Testing locators', () => {
 
     it('first example testing locators', () => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.formLayoutsPage();
 
         cy.get('input');

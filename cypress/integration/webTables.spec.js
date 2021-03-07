@@ -5,7 +5,7 @@ import {navigationTo} from '../support/page-objects/navigationPage';
 describe('Testing web tables', () => {
 
     before('Open application',() => {
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.smartTablePage();
     });
 

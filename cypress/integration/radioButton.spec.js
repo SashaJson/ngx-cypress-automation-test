@@ -6,7 +6,7 @@ describe('Testing radio button', () => {
 
     it('First example testing radio button', () => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.formLayoutsPage();
 
         cy.contains('nb-card', 'Using the Grid').find('[type="radio"]').then(radioButtons => {

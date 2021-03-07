@@ -5,7 +5,7 @@ import {navigationTo} from '../support/page-objects/navigationPage';
 describe('Testing then and wrap method', () => {
 
     beforeEach('Open application',() => {
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.formLayoutsPage();
     });
 

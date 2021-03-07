@@ -6,7 +6,7 @@ describe('Testing find web elements', () => {
 
     it('First example testing find web elements', () => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.formLayoutsPage();
 
         // cy.get('[data-cy="signInButton"]');

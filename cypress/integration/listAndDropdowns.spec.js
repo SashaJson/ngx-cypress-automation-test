@@ -2,7 +2,7 @@
 
 describe('Testing list and dropdowns', () => {
 
-    beforeEach('Open application',() => cy.visit('/'));
+    beforeEach('Open application',() => cy.openHomePage());
 
     it('First example testing list and dropdowns', () => {
 

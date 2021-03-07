@@ -6,7 +6,7 @@ describe('Testing dilog box', () => {
 
     beforeEach('Open application',() => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.smartTablePage();
 
     });

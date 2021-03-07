@@ -6,7 +6,7 @@ describe('Testing tooltip', () => {
 
     it('First example testing tooltip', () => {
 
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.tooltipPage();
 
         cy.contains('nb-card', 'Colored Tooltips')

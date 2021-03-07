@@ -5,7 +5,7 @@ import {navigationTo} from '../support/page-objects/navigationPage';
 describe('Testing invoke command', () => {
 
     beforeEach('Open application',() => {
-        cy.visit('/');
+        cy.openHomePage();
         navigationTo.formLayoutsPage();
     });
 
