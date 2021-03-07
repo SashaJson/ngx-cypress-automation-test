@@ -23,7 +23,7 @@ export class NavigationPage {
 
     toasterPage() {
         selectGroupMenuItem('Modal & Overlays');
-        cy.contains('Toaster').click();
+        cy.contains('Toastr').click();
     }
 
     smartTablePage() {
@@ -38,4 +38,4 @@ export class NavigationPage {
 
 }
 
-export const NavigationTo = new NavigationPage();
+export const navigationTo = new NavigationPage();

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import {NavigationTo} from '../support/page-objects/navigationPage';
+import {navigationTo} from '../support/page-objects/navigationPage';
 
 describe('Testing assert property', () => {
 
@@ -28,7 +28,7 @@ describe('Testing assert property', () => {
         }
 
         cy.visit('/');
-        NavigationTo.datepickerPage();
+        navigationTo.datepickerPage();
 
         cy.contains('nb-card', 'Common Datepicker').find('input').then(input => {
             cy.wrap(input).click()

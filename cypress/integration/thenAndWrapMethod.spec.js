@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
-import {NavigationTo} from '../support/page-objects/navigationPage';
+import {navigationTo} from '../support/page-objects/navigationPage';
 
 describe('Testing then and wrap method', () => {
 
-    beforeEach(() => {
+    beforeEach('Open application',() => {
         cy.visit('/');
-        NavigationTo.formLayoutsPage();
+        navigationTo.formLayoutsPage();
     });
 
     it('First testing', () => {

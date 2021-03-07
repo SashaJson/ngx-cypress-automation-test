@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-import {NavigationTo} from '../support/page-objects/navigationPage';
+import {navigationTo} from '../support/page-objects/navigationPage';
 
 describe('Testing locators', () => {
 
     it('first example testing locators', () => {
 
         cy.visit('/');
-        NavigationTo.formLayoutsPage();
+        navigationTo.formLayoutsPage();
 
         cy.get('input');
 

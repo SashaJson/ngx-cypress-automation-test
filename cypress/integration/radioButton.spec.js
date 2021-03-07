@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-import {NavigationTo} from '../support/page-objects/navigationPage';
+import {navigationTo} from '../support/page-objects/navigationPage';
 
 describe('Testing radio button', () => {
 
     it('First example testing radio button', () => {
 
         cy.visit('/');
-        NavigationTo.formLayoutsPage();
+        navigationTo.formLayoutsPage();
 
         cy.contains('nb-card', 'Using the Grid').find('[type="radio"]').then(radioButtons => {
 
