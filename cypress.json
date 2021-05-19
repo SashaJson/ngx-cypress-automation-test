@@ -7,6 +7,14 @@
   ],
   "viewportHeight": 1080,
   "viewportWidth": 1920,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  },
   "env": {
     "cypress-plugin-snapshots": {
       "imageConfig": {
